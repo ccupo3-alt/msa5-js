@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./18_ajax.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.20.0/dist/axios.min.js"></script>
+    <!-- @ 이후 숫자는 메이저.마이너.패치 번호임 -->
+    <script src="./18_ajax.js" defer></script>
+    <title>AJAX</title>
+</head>
+
+<body>
+  <div class="container">
+    <form action="" method="">
+        <input type="number" name="page" id="page" placeholder="페이지" required>
+        <input type="number" name="limit" id="limit" placeholder="출력개수" required>
+        <!-- 숫자만 입력을 받아야 해서 타입을 넘버로 설정 / required는 필수 항목 -->
+        <button type="submit">전송</button>
+    </form>
+
+    <div class="card-container">
+      <div class="card">
+        <div class="card-img"></div>
+        <p class="card-text">1: 아아아아</p>
+      </div>
+      <div class="card">
+        <div class="card-img"></div>
+        <p class="card-text">2: 가가가가</p>
+      </div>
+      <div class="card">
+        <div class="card-img"></div>
+        <p class="card-text">3: 나나나나</p>
+      </div>
+      <div class="card">
+        <div class="card-img"></div>
+        <p class="card-text">4: 바바바바</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

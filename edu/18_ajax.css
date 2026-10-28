@@ -1,0 +1,35 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.card-container{
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr; // 비율이 1:1:1로 세 칼럼이 만들어짐, 개수 줄여도 됨 */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  /* auto-fit은 컨테이너 크기에 맞춰 크기가 계속 늘어나고 auto-fill은 컨테이너 크기에 최소 크기의 셀이 들어올 공간이 생기면 빈 셀을 생성함 */
+  /* 브라우저의 최소 width는 500px */
+  gap: 10px;
+}
+.card{
+  padding: 10px;
+  /* background-color: aliceblue; */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.card-img{
+  background-image: url("../img/2bbobbi.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* 이미지는 기본이 바둑판식임 그거 해제 하는 거 */
+  /* aspect-ratio: 4/3; */
+  padding-top: 66%;
+  /* aspect-ratio보다 호환성이 좋음 */
+}
