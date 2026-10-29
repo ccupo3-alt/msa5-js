@@ -24,7 +24,7 @@
   gap: 10px;
 }
 .card-img{
-  background-image: url("../img/2bbobbi.png");
+  /* background-image: url("../img/2bbobbi.png"); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

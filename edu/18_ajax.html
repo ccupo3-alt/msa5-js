@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./18_ajax.css">
     <script src="https://cdn.jsdelivr.net/npm/axios@1.20.0/dist/axios.min.js"></script>
+    <!-- 자바스크립트 보다 먼저 실행 되어야 함(최상단) -->
     <!-- @ 이후 숫자는 메이저.마이너.패치 번호임 -->
     <script src="./18_ajax.js" defer></script>
     <title>AJAX</title>
@@ -20,24 +21,7 @@
         <button type="submit">전송</button>
     </form>
 
-    <div class="card-container">
-      <div class="card">
-        <div class="card-img"></div>
-        <p class="card-text">1: 아아아아</p>
-      </div>
-      <div class="card">
-        <div class="card-img"></div>
-        <p class="card-text">2: 가가가가</p>
-      </div>
-      <div class="card">
-        <div class="card-img"></div>
-        <p class="card-text">3: 나나나나</p>
-      </div>
-      <div class="card">
-        <div class="card-img"></div>
-        <p class="card-text">4: 바바바바</p>
-      </div>
-    </div>
+    <div class="card-container"></div>
   </div>
 </body>
 
